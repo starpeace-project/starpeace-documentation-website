@@ -24,7 +24,7 @@ module.exports = {
   build: {
     // analyze: true,
     publicPath: '/assets/',
-    vendor: ['lodash'],
+    vendor: ['lodash', 'superagent'],
     extend (config, { isDev, isClient }) {
       config.module.rules.push({
         test: /\.coffee$/,

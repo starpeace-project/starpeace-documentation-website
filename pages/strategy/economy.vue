@@ -130,7 +130,6 @@
 </template>
 
 <script lang='coffee'>
-
 export default
   layout: 'documentation'
   category: 'strategy.economy'
