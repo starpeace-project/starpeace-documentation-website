@@ -26,16 +26,6 @@ $sp-filter-light: invert(8%) sepia(22%) saturate(305%) hue-rotate(100deg) bright
     opacity: .7
 
 
-#application
-  display: grid
-  grid-template-columns: auto
-  grid-template-rows: 4rem auto
-  height: 100vh
-  overflow-y: scroll
-
-  > .columns
-    margin: 0
-
 .column-main-body
   background-color: #eee
 
@@ -44,6 +34,13 @@ $sp-filter-light: invert(8%) sepia(22%) saturate(305%) hue-rotate(100deg) bright
     padding: 1rem
     font-size: 1.2rem
 
+    &:not(:first-child)
+      margin-top: 1rem
+
     &.is-starpeace
       background-color: lighten(#395950, 15%)
       color: #fff
+
+    p
+      &:not(:last-child)
+        margin-bottom: 1rem

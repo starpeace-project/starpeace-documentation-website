@@ -2,7 +2,7 @@
 %no-ssr
   #common-header{'v-show':'show_header', 'v-cloak':true}
     .common-logo
-      %a.logo{href: '/'}
+      %a.logo{href: 'https://www.starpeace.io'}
         %h1 STAR
         %img.starpeace-logo
         %h1 PEACE

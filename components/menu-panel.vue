@@ -25,7 +25,7 @@
         %li
           %a{':class':"category == 'strategy.makingmoney' ? 'is-active' : ''", 'href':"/strategy/makingmoney"} Making Money
         %li
-          %a{':class':"category == 'strategy.upgrades' ? 'is-active' : ''", 'href':"/strategy/upgrades"} Building Upgrades
+          %a{':class':"category == 'strategy.upgrades' ? 'is-active' : ''", 'href':"/strategy/upgrades"} Facility Upgrades
         %li
           %a{':class':"category == 'strategy.research' ? 'is-active' : ''", 'href':"/strategy/research"} Licensing and Research
         %li
@@ -108,7 +108,9 @@ $sp-dark-bg: #2a453f
 $sp-button-light-bg: #ffffbf
 
 .column-menu
+  background-color: #eee
   padding: 0
+  padding-bottom: 1rem
 
   .search-field
     margin-bottom: 1.5rem
