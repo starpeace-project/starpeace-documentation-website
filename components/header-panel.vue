@@ -66,15 +66,15 @@ export default
         margin-left: .5rem
 
     &.mobile
-      padding: 2vw 2vw 1vw
+      padding: 2vw 1vw 1vw
       text-align: center
       width: 100%
 
       .starpeace-logo
-        background-size: 8vw
-        height: 8vw
+        background-size: 9vw
+        height: 9vw
         margin: 0 0 .5rem
-        width: 8vw
+        width: 9vw
 
       h1
         font-size: 11vw

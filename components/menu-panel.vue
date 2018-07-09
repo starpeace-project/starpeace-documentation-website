@@ -137,7 +137,7 @@ $sp-button-light-bg: #ffffbf
     a
       color: darken($sp-primary, 15%)
       display: inline-block
-      padding: .75rem 1rem
+      padding: .5rem 1rem .75rem
       margin-top: .25rem
 
       &:hover
