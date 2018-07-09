@@ -92,7 +92,7 @@
         %li
           %a{':class':"category == 'faq.money' ? 'is-active' : ''", 'href':"/faq/money"} Money
         %li
-          %a{':class':"category == 'faq.unorthodox' ? 'is-active' : ''", 'href':"/faq/Unorthodox"} Unorthodox Buildings
+          %a{':class':"category == 'faq.unorthodox' ? 'is-active' : ''", 'href':"/faq/unorthodox"} Unorthodox Buildings
 
 </template>
 
