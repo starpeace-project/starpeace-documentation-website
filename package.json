@@ -4,6 +4,7 @@
   "description": "Documentation for STARPEACE multiplayer economic simulation",
   "author": "ronappleton",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "cross-env PORT=11005 nuxt",
     "build": "nuxt build",

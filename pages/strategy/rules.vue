@@ -140,7 +140,7 @@
     %p
       As the STARPEACE Community is an extensions of the game, postings to these forums are bound by the
       STARPEACE website
-      %a{href:'https://www.starpeace.io/privacy.html'} End User License Agreement
+      %a{href:'https://www.starpeace.io/privacy'} End User License Agreement
       . In addition to the terms of the agreement, we have a few supplemental rules that apply to the STARPEACE Community:
     %p
       You may post any material, written in a courteous and mature manner, providing that it is on-topic for the

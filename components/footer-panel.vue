@@ -5,7 +5,7 @@
       .column.is-2.is-offset-3
         %a{href: 'https://docs.starpeace.io'} Documentation
       .column.is-2
-        %a{href: 'https://www.starpeace.io/privacy.html'} Privacy
+        %a{href: 'https://www.starpeace.io/privacy'} Privacy
       .column.is-2
         %a{href: 'https://github.com/ronappleton/starpeace-website-content', target:'_blank'} GitHub
 

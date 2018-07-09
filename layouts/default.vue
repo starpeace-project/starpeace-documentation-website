@@ -7,7 +7,7 @@
 <style lang='sass'>
 html
   font-size: 12px
-  overflow-y: hidden
+  overflow-y: scroll
 
 body
   background: url('~/assets/images/background.jpg') top center no-repeat
