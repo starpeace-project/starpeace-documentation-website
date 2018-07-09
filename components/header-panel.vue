@@ -1,13 +1,18 @@
 <template lang='haml'>
 %no-ssr
   #common-header{'v-show':'show_header', 'v-cloak':true}
-    .common-logo
+    .common-logo.not-mobile.is-hidden-mobile
+      %a.logo{href: 'https://www.starpeace.io'}
+        %h1 STAR
+        %img.starpeace-logo
+        %h1 PEACE
+    .common-logo.mobile.is-hidden-tablet.clearfix
       %a.logo{href: 'https://www.starpeace.io'}
         %h1 STAR
         %img.starpeace-logo
         %h1 PEACE
 
-    .welcome
+    .welcome.is-hidden-mobile
       %span Welcome, Visitor!
       %a.login-header{href: 'https://client.starpeace.io/login'} Sign In
 
@@ -59,6 +64,20 @@ export default
 
       &:not(:first-child)
         margin-left: .5rem
+
+    &.mobile
+      padding: 2vw 2vw 1vw
+      text-align: center
+      width: 100%
+
+      .starpeace-logo
+        background-size: 8vw
+        height: 8vw
+        margin: 0 0 .5rem
+        width: 8vw
+
+      h1
+        font-size: 11vw
 
   a
     color: #fff
