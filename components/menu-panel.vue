@@ -97,8 +97,6 @@
 </template>
 
 <script lang='coffee'>
-import request from 'superagent'
-
 export default
   props:
     category: String
@@ -107,10 +105,11 @@ export default
     client_version: 'Client Latest Version'
 
   created: ->
-    request
-      .get 'https://client.starpeace.io/assets/client-version.json'
-      .set('accept', 'json')
-      .end (error, response) => @client_version = "Client #{response.body.version}"
+    request = new XMLHttpRequest()
+    request.open('GET', 'https://client.starpeace.io/assets/client-version.json', true)
+    request.onload = () =>
+      @client_version = "Client #{JSON.parse(request.responseText).version}" if request.status >= 200 && request.status < 400
+    request.send()
 </script>
 
 <style lang='sass' scoped>
