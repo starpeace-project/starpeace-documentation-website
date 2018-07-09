@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - aws s3 sync --delete dist "s3://docs.starpeace.io/"
-      - aws cloudfront create-invalidation --distribution-id EQJ5OVV1B1Y4T --paths / /faq/buildings/ /faq/earlygame/ /faq/goals/ /faq/history/ /faq/money/ /faq/research/ /faq/stores/ /faq/unorthodox/ /faq/zones/ /strategy/overview/ /strategy/economy/ /strategy/information/ /strategy/organization/ /strategy/makingmoney/ /strategy/upgrades/ /strategy/research/ /strategy/supplychain/ /strategy/prestige/ /strategy/rhythm/ /strategy/othertycoons/ /strategy/rules/ /tips/largecompany/
+      - aws cloudfront create-invalidation --distribution-id EQJ5OVV1B1Y4T --paths / /faq/buildings/ /faq/earlygame/ /faq/goals/ /faq/history/ /faq/money/ /faq/research/ /faq/stores/ /faq/unorthodox/ /faq/zones/ /strategy/overview/ /strategy/economy/ /strategy/information/ /strategy/organization/ /strategy/makingmoney/ /strategy/upgrades/ /strategy/research/ /strategy/supplychain/ /strategy/prestige/ /strategy/rhythm/ /strategy/othertycoons/ /strategy/rules/ /tips/largecompany/ /tutorial/commerce/ /tutorial/companyhq/ /tutorial/creation/ /tutorial/firststore/ /tutorial/industry/ /tutorial/levels/ /tutorial/office/ /tutorial/politics/ /tutorial/publicfacility/ /tutorial/starting/ /tutorial/warehouse/
       - echo Build completed on `date`
 
 artifacts:

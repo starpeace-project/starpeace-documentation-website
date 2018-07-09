@@ -46,27 +46,27 @@
         %p.menu-label
           Tutorials
         %li
-          %a Getting Started
+          %a{':class':"category == 'tutorial.starting' ? 'is-active' : ''", 'href':"/tutorial/starting"} Getting Started
         %li
-          %a Company Commerce
+          %a{':class':"category == 'tutorial.commerce' ? 'is-active' : ''", 'href':"/tutorial/commerce"} Company Commerce
         %li
-          %a Company Creation
+          %a{':class':"category == 'tutorial.creation' ? 'is-active' : ''", 'href':"/tutorial/creation"} Company Creation
         %li
-          %a Construct First Store
+          %a{':class':"category == 'tutorial.companyhq' ? 'is-active' : ''", 'href':"/tutorial/companyhq"} Construct Company Headquarters
         %li
-          %a Construct Company HQ
+          %a{':class':"category == 'tutorial.firststore' ? 'is-active' : ''", 'href':"/tutorial/firststore"} Construct First Store
         %li
-          %a Offices
+          %a{':class':"category == 'tutorial.office' ? 'is-active' : ''", 'href':"/tutorial/office"} Offices
         %li
-          %a Industries
+          %a{':class':"category == 'tutorial.industry' ? 'is-active' : ''", 'href':"/tutorial/industry"} Industries
         %li
-          %a Warehouses
+          %a{':class':"category == 'tutorial.warehouse' ? 'is-active' : ''", 'href':"/tutorial/warehouse"} Warehouses
         %li
-          %a Public Facilities
+          %a{':class':"category == 'tutorial.publicfacility' ? 'is-active' : ''", 'href':"/tutorial/publicfacility"} Public Facilities
         %li
-          %a Politics
+          %a{':class':"category == 'tutorial.politics' ? 'is-active' : ''", 'href':"/tutorial/politics"} Politics
         %li
-          %a Levels
+          %a{':class':"category == 'tutorial.levels' ? 'is-active' : ''", 'href':"/tutorial/levels"} Levels
 
         %p.menu-label
           Tips
