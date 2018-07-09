@@ -3,8 +3,7 @@ const webpack = require('webpack')
 
 module.exports = {
   css: [
-    { src: '~/assets/stylesheets/bulma-starpeace.sass', lang: 'sass' },
-    { src: '~/assets/stylesheets/starpeace.sass', lang: 'sass' }
+    { src: '~/assets/stylesheets/bulma-starpeace.sass', lang: 'sass' }
   ],
   head: {
     title: 'Documentation - STARPEACE',

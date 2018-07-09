@@ -11,7 +11,7 @@
       %span Welcome, Visitor!
       %a.login-header{href: 'https://client.starpeace.io/login'} Sign In
 
-    .development
+    .development.is-hidden-mobile.is-hidden-tablet-only
       %a.documentation{href: 'https://docs.starpeace.io'} Documentation
       %a.community{href: 'https://starpeaceproject.com/', target:'_blank'} Community
       %a.discord{href: 'https://discord.gg/TF9Bmsj', target:'_blank'}

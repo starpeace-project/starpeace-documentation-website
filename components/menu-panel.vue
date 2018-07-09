@@ -1,6 +1,6 @@
 <template lang='haml'>
 %no-ssr
-  .column.is-one-fifth.column-menu
+  .column.column-menu.is-one-quarter-tablet.is-one-quarter-desktop.is-one-fifth-widescreen.is-one-fifth-fullhd
     %aside.menu
       %p.level#client-links
         %a.level-left{href:'https://client.starpeace.io'} {{ client_version }}
@@ -123,6 +123,7 @@ $sp-button-light-bg: #ffffbf
 
 .column-menu
   background-color: #eee
+  min-width: 28rem
   padding: 0
   padding-bottom: 1rem
 
@@ -133,19 +134,22 @@ $sp-button-light-bg: #ffffbf
     &:hover
       background-color: lighten($sp-primary, 30%)
 
-    .release-notes
-      font-size: 1rem
-
     a
-      padding: .5rem 1rem
       color: darken($sp-primary, 15%)
+      display: inline-block
+      padding: .75rem 1rem
+      margin-top: .25rem
 
       &:hover
         color: darken($sp-primary, 25%)
 
       &:active,
-      .is-active
+      &.is-active
         color: #000
+
+      &.release-notes
+        font-size: 1rem
+        float: right
 
   .search-field
     margin-bottom: 1.5rem
@@ -160,7 +164,6 @@ $sp-button-light-bg: #ffffbf
       &:active,
       &.is-active
         background-color: darken($sp-primary-bg, 5%)
-
 
   .menu
     background-color: #fff
