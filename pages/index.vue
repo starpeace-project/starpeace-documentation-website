@@ -107,10 +107,12 @@ $sp-dark-bg: #2a453f
     font-size: 1.4rem
 
     &:hover
+      background-color: lighten($sp-primary, 30%)
       color: darken($sp-primary, 25%)
 
     &:active,
     &.is-active
+      background-color: lighten($sp-primary, 10%)
       color: #000
 
 </style>

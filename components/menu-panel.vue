@@ -117,10 +117,6 @@ export default
 $sp-primary: #6ea192
 $sp-primary-bg: #395950
 
-$sp-dark-bg: #2a453f
-
-$sp-button-light-bg: #ffffbf
-
 .column-menu
   background-color: #eee
   min-width: 28rem
@@ -133,6 +129,10 @@ $sp-button-light-bg: #ffffbf
 
     &:hover
       background-color: lighten($sp-primary, 30%)
+
+    &:active,
+    &.is-active
+      background-color: lighten($sp-primary, 10%)
 
     a
       color: darken($sp-primary, 15%)
