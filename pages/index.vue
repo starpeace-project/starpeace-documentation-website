@@ -22,7 +22,7 @@
     .column
       .card
         .card-header
-          .card-header-title Tutorial
+          .card-header-title Tutorials
         .card-content
           %p.subtitle
             These step-by-step guides will help you navigate through this complex world. From the basics of getting
