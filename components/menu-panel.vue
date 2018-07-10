@@ -4,7 +4,10 @@
     %aside.menu
       %p.level#client-links
         %a.level-left{href:'https://client.starpeace.io'} {{ client_version }}
-        %a.level-right.release-notes{href:'https://client.starpeace.io/release'} Release Notes
+        %a.level-right.release-notes{href:'https://client.starpeace.io/release'}
+          %span.is-hidden-tablet-only
+            Release&nbsp;
+          Notes
 
       .field.has-addons.search-field
         .control.has-icons-left.is-expanded
