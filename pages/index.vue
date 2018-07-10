@@ -5,8 +5,8 @@
       Welcome to the STARPEACE gameplay documentation and client user guide. Please let us know if you have any
       feedback within the STARPEACE Community!
 
-  .columns.link-row
-    .column
+  .columns.is-multiline.link-row
+    .column.is-half-tablet.is-one-third-desktop
       .card
         .card-header
           .card-header-title Basic Strategy
@@ -19,7 +19,7 @@
         %footer.card-footer
           %a.card-footer-item{href:'/strategy/overview'} Learn STARPEACE Strategy
 
-    .column
+    .column.is-half-tablet.is-one-third-desktop
       .card
         .card-header
           .card-header-title Tutorials
@@ -31,7 +31,7 @@
         %footer.card-footer
           %a.card-footer-item{href:'/tutorial/starting'} Follow Gameplay Tutorials
 
-    .column
+    .column.is-half-tablet.is-one-third-desktop
       .card
         .card-header
           .card-header-title  FAQs
@@ -42,8 +42,7 @@
         %footer.card-footer
           %a.card-footer-item{href:'/faq/goals'} View Frequently Asked Questions
 
-  .columns.link-row
-    .column
+    .column.is-half-tablet.is-one-third-desktop
       .card
         .card-header
           .card-header-title Tips
@@ -54,7 +53,7 @@
         %footer.card-footer
           %a.card-footer-item{href:'/tips/largecompany'} View STARPEACE Tips
 
-    .column
+    .column.is-half-tablet.is-one-third-desktop
       .card
         .card-header
           .card-header-title Community Forum
@@ -66,7 +65,7 @@
         %footer.card-footer
           %a.card-footer-item{href:'https://starpeaceproject.com/', target:'_blank'} Visit Community Forums
 
-    .column
+    .column.is-half-tablet.is-one-third-desktop
       .card
         .card-header
           .card-header-title Community Chatroom
@@ -99,7 +98,7 @@ $sp-dark-bg: #2a453f
     font-size: 1.6rem
 
   .card-content
-    min-height: 10rem
+    min-height: 12vw
 
 .card-footer
   a
