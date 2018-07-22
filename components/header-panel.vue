@@ -21,6 +21,8 @@
       %a.community{href: 'https://starpeaceproject.com/', target:'_blank'} Community
       %a.discord{href: 'https://discord.gg/TF9Bmsj', target:'_blank'}
         %font-awesome-icon{':icon':"['fab', 'discord']"}
+      %a.twitter{href: 'https://twitter.com/starpeace_io', target:'_blank'}
+        %font-awesome-icon{':icon':"['fab', 'twitter']"}
       %a.github{href: 'https://github.com/ronappleton/starpeace-website-content', target:'_blank'}
         %font-awesome-icon{':icon':"['fab', 'github']"}
 </template>
@@ -100,8 +102,12 @@ export default
       vertical-align: bottom
 
       &.discord,
+      &.twitter,
       &.github
         font-size: 1.4rem
+
+      &.twitter
+        line-height: 2.95rem
 
       &.discord
         line-height: 2.8rem

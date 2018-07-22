@@ -7,9 +7,9 @@ import {
   faUserSecret,
   faUserTie
 } from '@fortawesome/free-solid-svg-icons'
-import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faQuestionCircle, faSearch, faUserSecret, faUserTie, faDiscord, faGithub)
+library.add(faQuestionCircle, faSearch, faUserSecret, faUserTie, faDiscord, faGithub, faTwitter)
 
 
 import Vue from 'vue'
