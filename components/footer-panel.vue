@@ -1,5 +1,4 @@
 <template lang='haml'>
-%no-ssr
   #footer-container
     .columns.links
       .column.is-2.is-offset-3
@@ -7,12 +6,11 @@
       .column.is-2
         %a{href: 'https://www.starpeace.io/privacy'} Privacy
       .column.is-2
-        %a{href: 'https://github.com/ronappleton/starpeace-website-content', target:'_blank'} GitHub
+        %a{href: 'https://github.com/starpeace-project/starpeace-website-documentation', target:'_blank'} GitHub
 
     .columns.copyright
       .column.is-6.is-offset-3
         %span{'v-once':true, 'v-html':'copyright()'}
-
 </template>
 
 <script lang='coffee'>

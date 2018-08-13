@@ -2,11 +2,9 @@
 %no-ssr
   #application-container{'v-cloak':true}
     %sp-header
-
     #application-body.columns
       %sp-menu{'v-bind:category':'category'}
       %nuxt
-
     %sp-footer
 </template>
 

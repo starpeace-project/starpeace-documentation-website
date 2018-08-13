@@ -1,5 +1,4 @@
 <template lang='haml'>
-%no-ssr
   .column.column-menu.is-one-quarter-tablet.is-one-quarter-desktop.is-one-fifth-widescreen.is-one-fifth-fullhd
     %aside.menu
       %p.level#client-links
@@ -96,7 +95,6 @@
           %a{':class':"category == 'faq.money' ? 'is-active' : ''", 'href':"/faq/money"} Money
         %li
           %a{':class':"category == 'faq.unorthodox' ? 'is-active' : ''", 'href':"/faq/unorthodox"} Unorthodox Buildings
-
 </template>
 
 <script lang='coffee'>

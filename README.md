@@ -1,13 +1,13 @@
 
-# starpeace-website-content
+# starpeace-website-documentation
 
-[![Build Status](https://travis-ci.org/ronappleton/starpeace-website-content.svg)](https://travis-ci.org/ronappleton/starpeace-website-content)
+[![Build Status](https://travis-ci.org/starpeace-project/starpeace-website-documentation.svg)](https://travis-ci.org/starpeace-project/starpeace-website-documentation)
 
 Documentation website for [STARPEACE](https://docs.starpeace.io), including game client instructions, rules and overview of gameplay, and game history and lore.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within this website, please send an e-mail to security@starpeace.io or open a [GitHub issue](https://github.com/ronappleton/starpeace-website-content/issues). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this website, please send an e-mail to security@starpeace.io or open a [GitHub issue](https://github.com/starpeace-project/starpeace-website-documentation/issues). All security vulnerabilities will be promptly addressed.
 
 ## Development
 
@@ -19,11 +19,11 @@ Local development can be accomplished in a few commands. The following build-tim
 Retrieve copy of repository and navigate to root:
 
 ```
-$ git clone https://github.com/ronappleton/starpeace-website-content.git
-$ cd starpeace-website-content
+$ git clone https://github.com/starpeace-project/starpeace-website-documentation.git
+$ cd starpeace-website-documentation
 ```
 
-Install starpeace-website-content dependencies:
+Install starpeace-website-documentation dependencies:
 
 ```
 $ npm install

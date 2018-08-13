@@ -1,5 +1,4 @@
 <template lang='haml'>
-%no-ssr
   #common-header{'v-show':'show_header', 'v-cloak':true}
     .common-logo.not-mobile.is-hidden-mobile
       %a.logo{href: 'https://www.starpeace.io'}
@@ -23,7 +22,7 @@
         %font-awesome-icon{':icon':"['fab', 'discord']"}
       %a.twitter{href: 'https://twitter.com/starpeace_io', target:'_blank'}
         %font-awesome-icon{':icon':"['fab', 'twitter']"}
-      %a.github{href: 'https://github.com/ronappleton/starpeace-website-content', target:'_blank'}
+      %a.github{href: 'https://github.com/starpeace-project/starpeace-website-documentation', target:'_blank'}
         %font-awesome-icon{':icon':"['fab', 'github']"}
 </template>
 
