@@ -4,7 +4,7 @@
   "description": "Documentation website for STARPEACE multiplayer economic simulation",
   "author": "starpeace-project",
   "private": true,
-  "license": "MIT",
+  "license": "CC-BY-4.0",
   "scripts": {
     "dev": "cross-env NODE_ENV=development PORT=11005 nuxt",
     "build": "nuxt build",

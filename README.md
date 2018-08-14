@@ -2,6 +2,8 @@
 # starpeace-website-documentation
 
 [![Build Status](https://travis-ci.org/starpeace-project/starpeace-website-documentation.svg)](https://travis-ci.org/starpeace-project/starpeace-website-documentation)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Documentation website for [STARPEACE](https://docs.starpeace.io), including game client instructions, rules and overview of gameplay, and game history and lore.
 
@@ -47,4 +49,4 @@ After building repository, website is compiled into static resources within the 
 
 ## License
 
-Repository is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+All content of starpeace-website-client-assets is licensed under the [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0), and the underlying source code used to format and display that content is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
