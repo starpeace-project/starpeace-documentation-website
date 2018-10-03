@@ -37,10 +37,4 @@ body
   font-size: 12px
   margin: 0
   padding: 0
-  -webkit-touch-callout: none
-  -webkit-user-select: none
-  -khtml-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
 </style>
