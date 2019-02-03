@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Documentation website for STARPEACE multiplayer economic simulation",
   "author": "starpeace-project",
-  "private": true,
   "license": "CC-BY-4.0",
   "scripts": {
     "dev": "cross-env NODE_ENV=development PORT=11005 nuxt",
@@ -14,26 +13,27 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.4.2"
+    "nuxt": "^2.4.2"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.0",
-    "@fortawesome/free-brands-svg-icons": "^5.1.0",
-    "@fortawesome/free-regular-svg-icons": "^5.1.0",
-    "@fortawesome/free-solid-svg-icons": "^5.1.0",
-    "@fortawesome/vue-fontawesome": "^0.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.14",
+    "@fortawesome/free-brands-svg-icons": "^5.7.1",
+    "@fortawesome/free-regular-svg-icons": "^5.7.1",
+    "@fortawesome/free-solid-svg-icons": "^5.7.1",
+    "@fortawesome/vue-fontawesome": "^0.1.5",
     "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/moment": "^1.0.0",
-    "bulma": "^0.7.1",
+    "@nuxtjs/moment": "^1.1.0",
+    "bulma": "^0.7.2",
     "coffee-loader": "^0.9.0",
-    "coffeescript": "^2.3.1",
+    "coffeescript": "^2.3.2",
     "cross-env": "^5.2.0",
     "del-cli": "^1.1.0",
-    "haml-loader": "^0.1.0",
-    "hamljs": "^0.6.2",
-    "lodash": "^4.17.10",
-    "moment": "^2.22.2",
-    "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0"
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "terser": "^3.14.1"
   }
 }

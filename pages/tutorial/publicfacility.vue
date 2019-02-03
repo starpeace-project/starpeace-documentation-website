@@ -1,12 +1,12 @@
-<template lang='haml'>
+<template lang='pug'>
   .column.column-main-body
     .documentation-body
-      %h2 Public Facilities
-      %a#publicfacility
+      h2 Public Facilities
+      a#publicfacility
 
     .documentation-body
-      %h3 Construction
-      %p
+      h3 Construction
+      p.
         To build Public Facilities just go to Public facilities in your build menu. With the exception of the monuments,
         who needs to be researched, they are available from the start. We recommend that you build public facilities only
         after you have done everything else and your company is stable, as they require a fair amount of money.
@@ -17,8 +17,8 @@
         different headquarters might give you all the prestige you need.
 
     .documentation-body
-      %h3 Attracting Residents
-      %p
+      h3 Attracting Residents
+      p.
         In order to attract people to their cities, some might be tempted to build hospitals and other big public
         facilities, but the best thing to do is let the mayor himself build them. When it comes to health coverage,
         things can be very expensive. However, if the mayor refuses, then you might not have a choice. Police and fire
@@ -28,8 +28,8 @@
         go, you might consider putting them near your high residential buildings since they enjoy clean, green areas.
 
     .documentation-body
-      %h3 Prestige and Cost
-      %p
+      h3 Prestige and Cost
+      p.
         Public facilities may augment your prestige by 10 or even 20 points sometimes. Furthermore, they motivate other
         people to move into your town, because of the services and the beauty. The only drawback is that public
         facilities don't provide you with any direct income, and their benefits are shared by the entire vicinity or even

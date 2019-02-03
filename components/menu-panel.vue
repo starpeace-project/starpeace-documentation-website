@@ -1,100 +1,89 @@
-<template lang='haml'>
+<template lang='pug'>
   .column.column-menu.is-one-quarter-tablet.is-one-quarter-desktop.is-one-fifth-widescreen.is-one-fifth-fullhd
-    %aside.menu
-      %p.level#client-links
-        %a.level-left{href:'https://client.starpeace.io'} {{ client_version }}
-        %a.level-right.release-notes{href:'https://client.starpeace.io/release'}
-          %span.is-hidden-tablet-only
-            Release&nbsp;
-          Notes
+    aside.menu
+      p.level#client-links
+        a.level-left(href='https://client.starpeace.io') {{ client_version }}
+        a.level-right.release-notes(href='https://client.starpeace.io/release')
+          span.is-hidden-tablet-only
+            | Release
+            |
+          | Notes
 
-      .field.has-addons.search-field
-        .control.has-icons-left.is-expanded
-          %input.input.is-medium{type:'text'}
-          %span.icon.is-left
-            %font-awesome-icon{':icon':"['fas', 'search']"}
-        .control
-          %a.button.is-primary.is-medium
-            Search
+      p.menu-label Basic Strategy
+      ul.menu-list
+        li
+          a(:class="category == 'strategy.overview' ? 'is-active' : ''", href="/strategy/overview") Overview
+        li
+          a(:class="category == 'strategy.economy' ? 'is-active' : ''", href="/strategy/economy") Economy
+        li
+          a(:class="category == 'strategy.information' ? 'is-active' : ''", href="/strategy/information") Information is Power
+        li
+          a(:class="category == 'strategy.organization' ? 'is-active' : ''", href="/strategy/organization") Company Organization
+        li
+          a(:class="category == 'strategy.makingmoney' ? 'is-active' : ''", href="/strategy/makingmoney") Making Money
+        li
+          a(:class="category == 'strategy.upgrades' ? 'is-active' : ''", href="/strategy/upgrades") Facility Upgrades
+        li
+          a(:class="category == 'strategy.research' ? 'is-active' : ''", href="/strategy/research") Licensing and Research
+        li
+          a(:class="category == 'strategy.supplychain' ? 'is-active' : ''", href="/strategy/supplychain") Clients and Suppliers
+        li
+          a(:class="category == 'strategy.prestige' ? 'is-active' : ''", href="/strategy/prestige") Prestige
+        li
+          a(:class="category == 'strategy.rhythm' ? 'is-active' : ''", href="/strategy/rhythm") Rhythm
+        li
+          a(:class="category == 'strategy.othertycoons' ? 'is-active' : ''", href="/strategy/othertycoons") Other Tycoons
+        li
+          a(:class="category == 'strategy.rules' ? 'is-active' : ''", href="/strategy/rules") Rules of Conduct
 
-      %p.menu-label
-        Basic Strategy
-      %ul.menu-list
-        %li
-          %a{':class':"category == 'strategy.overview' ? 'is-active' : ''", 'href':"/strategy/overview"} Overview
-        %li
-          %a{':class':"category == 'strategy.economy' ? 'is-active' : ''", 'href':"/strategy/economy"} Economy
-        %li
-          %a{':class':"category == 'strategy.information' ? 'is-active' : ''", 'href':"/strategy/information"} Information is Power
-        %li
-          %a{':class':"category == 'strategy.organization' ? 'is-active' : ''", 'href':"/strategy/organization"} Company Organization
-        %li
-          %a{':class':"category == 'strategy.makingmoney' ? 'is-active' : ''", 'href':"/strategy/makingmoney"} Making Money
-        %li
-          %a{':class':"category == 'strategy.upgrades' ? 'is-active' : ''", 'href':"/strategy/upgrades"} Facility Upgrades
-        %li
-          %a{':class':"category == 'strategy.research' ? 'is-active' : ''", 'href':"/strategy/research"} Licensing and Research
-        %li
-          %a{':class':"category == 'strategy.supplychain' ? 'is-active' : ''", 'href':"/strategy/supplychain"} Clients and Suppliers
-        %li
-          %a{':class':"category == 'strategy.prestige' ? 'is-active' : ''", 'href':"/strategy/prestige"} Prestige
-        %li
-          %a{':class':"category == 'strategy.rhythm' ? 'is-active' : ''", 'href':"/strategy/rhythm"} Rhythm
-        %li
-          %a{':class':"category == 'strategy.othertycoons' ? 'is-active' : ''", 'href':"/strategy/othertycoons"} Other Tycoons
-        %li
-          %a{':class':"category == 'strategy.rules' ? 'is-active' : ''", 'href':"/strategy/rules"} Rules of Conduct
+        p.menu-label Tutorials
+        li
+          a(:class="category == 'tutorial.starting' ? 'is-active' : ''", href="/tutorial/starting") Getting Started
+        li
+          a(:class="category == 'tutorial.commerce' ? 'is-active' : ''", href="/tutorial/commerce") Company Commerce
+        li
+          a(:class="category == 'tutorial.creation' ? 'is-active' : ''", href="/tutorial/creation") Company Creation
+        li
+          a(:class="category == 'tutorial.companyhq' ? 'is-active' : ''", href="/tutorial/companyhq") Construct Company Headquarters
+        li
+          a(:class="category == 'tutorial.firststore' ? 'is-active' : ''", href="/tutorial/firststore") Construct First Store
+        li
+          a(:class="category == 'tutorial.office' ? 'is-active' : ''", href="/tutorial/office") Offices
+        li
+          a(:class="category == 'tutorial.industry' ? 'is-active' : ''", href="/tutorial/industry") Industries
+        li
+          a(:class="category == 'tutorial.warehouse' ? 'is-active' : ''", href="/tutorial/warehouse") Warehouses
+        li
+          a(:class="category == 'tutorial.publicfacility' ? 'is-active' : ''", href="/tutorial/publicfacility") Public Facilities
+        li
+          a(:class="category == 'tutorial.politics' ? 'is-active' : ''", href="/tutorial/politics") Politics
+        li
+          a(:class="category == 'tutorial.levels' ? 'is-active' : ''", href="/tutorial/levels") Levels
 
-        %p.menu-label
-          Tutorials
-        %li
-          %a{':class':"category == 'tutorial.starting' ? 'is-active' : ''", 'href':"/tutorial/starting"} Getting Started
-        %li
-          %a{':class':"category == 'tutorial.commerce' ? 'is-active' : ''", 'href':"/tutorial/commerce"} Company Commerce
-        %li
-          %a{':class':"category == 'tutorial.creation' ? 'is-active' : ''", 'href':"/tutorial/creation"} Company Creation
-        %li
-          %a{':class':"category == 'tutorial.companyhq' ? 'is-active' : ''", 'href':"/tutorial/companyhq"} Construct Company Headquarters
-        %li
-          %a{':class':"category == 'tutorial.firststore' ? 'is-active' : ''", 'href':"/tutorial/firststore"} Construct First Store
-        %li
-          %a{':class':"category == 'tutorial.office' ? 'is-active' : ''", 'href':"/tutorial/office"} Offices
-        %li
-          %a{':class':"category == 'tutorial.industry' ? 'is-active' : ''", 'href':"/tutorial/industry"} Industries
-        %li
-          %a{':class':"category == 'tutorial.warehouse' ? 'is-active' : ''", 'href':"/tutorial/warehouse"} Warehouses
-        %li
-          %a{':class':"category == 'tutorial.publicfacility' ? 'is-active' : ''", 'href':"/tutorial/publicfacility"} Public Facilities
-        %li
-          %a{':class':"category == 'tutorial.politics' ? 'is-active' : ''", 'href':"/tutorial/politics"} Politics
-        %li
-          %a{':class':"category == 'tutorial.levels' ? 'is-active' : ''", 'href':"/tutorial/levels"} Levels
+        p.menu-label Tips
+        li
+          a(:class="category == 'tips.largecompany' ? 'is-active' : ''", href="/tips/largecompany") Managing Large Companies
 
-        %p.menu-label
-          Tips
-        %li
-          %a{':class':"category == 'tips.largecompany' ? 'is-active' : ''", 'href':"/tips/largecompany"} Managing Large Companies
-
-        %p.menu-label
+        p.menu-label
           FAQs
-        %li
-          %a{':class':"category == 'faq.goals' ? 'is-active' : ''", 'href':"/faq/goals"} Goals
-        %li
-          %a{':class':"category == 'faq.history' ? 'is-active' : ''", 'href':"/faq/history"} History
-        %li
-          %a{':class':"category == 'faq.earlygame' ? 'is-active' : ''", 'href':"/faq/earlygame"} Early-game Strategy
-        %li
-          %a{':class':"category == 'faq.buildings' ? 'is-active' : ''", 'href':"/faq/buildings"} Buildings
-        %li
-          %a{':class':"category == 'faq.research' ? 'is-active' : ''", 'href':"/faq/research"} Research
-        %li
-          %a{':class':"category == 'faq.stores' ? 'is-active' : ''", 'href':"/faq/stores"} Stores and Supplies
-        %li
-          %a{':class':"category == 'faq.zones' ? 'is-active' : ''", 'href':"/faq/zones"} Zones
-        %li
-          %a{':class':"category == 'faq.money' ? 'is-active' : ''", 'href':"/faq/money"} Money
-        %li
-          %a{':class':"category == 'faq.unorthodox' ? 'is-active' : ''", 'href':"/faq/unorthodox"} Unorthodox Buildings
+        li
+          a(:class="category == 'faq.goals' ? 'is-active' : ''", href="/faq/goals") Goals
+        li
+          a(:class="category == 'faq.history' ? 'is-active' : ''", href="/faq/history") History
+        li
+          a(:class="category == 'faq.earlygame' ? 'is-active' : ''", href="/faq/earlygame") Early-game Strategy
+        li
+          a(:class="category == 'faq.buildings' ? 'is-active' : ''", href="/faq/buildings") Buildings
+        li
+          a(:class="category == 'faq.research' ? 'is-active' : ''", href="/faq/research") Research
+        li
+          a(:class="category == 'faq.stores' ? 'is-active' : ''", href="/faq/stores") Stores and Supplies
+        li
+          a(:class="category == 'faq.zones' ? 'is-active' : ''", href="/faq/zones") Zones
+        li
+          a(:class="category == 'faq.money' ? 'is-active' : ''", href="/faq/money") Money
+        li
+          a(:class="category == 'faq.unorthodox' ? 'is-active' : ''", href="/faq/unorthodox") Unorthodox Buildings
 </template>
 
 <script lang='coffee'>

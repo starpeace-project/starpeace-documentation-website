@@ -1,20 +1,20 @@
-<template lang='haml'>
+<template lang='pug'>
   .column.column-main-body
     .documentation-body
-      %h2 Unorthodox Buildings
-      %a#unorthodox
+      h2 Unorthodox Buildings
+      a#unorthodox
 
     .documentation-body
-      %h3 What do you mean by unorthodox buildings?
-      %p
+      h3 What do you mean by unorthodox buildings?
+      p.
         There are some buildings in STARPEACE that have a unique way of 'behaving', a way that sets them apart from
         the other buildings belonging to the same category. The main reason for this is to provide a more realistic
         representation of the kind of function they satisfy. These buildings are: lumber mills, TV stations and
         antennas, movie studios and movie theaters, banks, mausoleums and magna research centers.
 
     .documentation-body
-      %h3 How does a Lumber Mill work?
-      %p
+      h3 How does a Lumber Mill work?
+      p.
         Lumber mills are essentially farms producing woods. They have two separate cycles of production. In the first
         cycle, lasting from 6 to 7 months they grow the trees. In this period, they don't produce any lumber and you
         will see the trees slowly grow in facilities' image. The second period is when the trees are cut, lasting from
@@ -26,8 +26,8 @@
         two of them, on alternate cycles and use a warehouse.
 
     .documentation-body
-      %h3 How do TV Stations and Antennas work?
-      %p
+      h3 How do TV Stations and Antennas work?
+      p.
         The TV station makes money selling ads. The number of ads to be sold depends on the audience; that's where
         antennas come into play. Antennas 'collect' viewers depending on the city they're positioned in and on the
         parameters set by the stations. The more hours on air, the more viewers, however the higher the ad rate is,
@@ -36,8 +36,8 @@
         wisely.
 
     .documentation-body
-      %h3 How do Movie Studios and Movie Theaters work?
-      %p
+      h3 How do Movie Studios and Movie Theaters work?
+      p.
         The movie business is a very expensive business, but it can be very rewarding if done properly. Movie studios
         produce films according to two parameters: budget and shoot time (how long it takes to film). The owner
         establishes the parameters and after the shoot the studio produces a movie with a certain grade of quality.
@@ -56,8 +56,8 @@
         always be the same and the title of subsequent movies will always be random.
 
     .documentation-body
-      %h3 How do player's banks work?
-      %p
+      h3 How do player's banks work?
+      p.
         Banks only make money by lending it to other players. The owner sets the interest rate and number of annual
         payments necessary, then just waits for the cash to come back. Anybody can borrow money from banks, but
         banks will check the status of your business before making a loan to you. The maximum amount you can get depends
@@ -66,8 +66,8 @@
         especially interest!) can quickly become overwhelming.
 
     .documentation-body
-      %h3 What are Mausoleums?
-      %p
+      h3 What are Mausoleums?
+      p.
         Mausoleums are the legacy of transcended tycoons. Once you transcend, the only building left on the planet is the
         mausoleum, a place where you can inscribe your words of wisdom. The transcendence takes place exactly one year
         after you started construction on the mausoleum, or when it's completed, whichever takes longer. Mausoleums cannot
@@ -75,15 +75,15 @@
         your excellence.
 
     .documentation-body
-      %h3 How do magna research centers work?
-      %p
+      h3 How do magna research centers work?
+      p.
         Magna research centers are the equivalent of a HQ for a magna company, with only one exception. However, you don't
         need to build it in order to start building magna facilities. You may want to build it when you want to start
         developing research or buy services for your magna buildings.
 
     .documentation-body
-      %h3 This is it for 'unusual' buildings, or will new ones be introduced in the future?
-      %p
+      h3 This is it for 'unusual' buildings, or will new ones be introduced in the future?
+      p.
         The STARPEACE universe is in constant evolution, so always expect new features. The development team will certainly
         come up with new unique facilities, try to improve realism or put a twist on something that already exists. An
         example of this is movie theaters, they used to be just like any other commercial building, but with the
