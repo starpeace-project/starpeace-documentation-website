@@ -16,7 +16,7 @@
         enable your enterprises to continue evolving. You can enter the STARPEACE worlds from time to time to
         check how your businesses are doing, and only spend more time in the game when you need to do carry out
         major reforms or expansions in your companies. You can check the status of your companies from the
-        STARPEACE web site. This is very useful, especially if your boss is not too fond of online fun, you can
+        STARPEACE website. This is very useful, especially if your boss is not too fond of online fun, you can
         still keep tabs on your companies and STARPEACE happenings without actually needing to be in the game.
       p.
         It terms of game success, it's your mind that counts most. You will spend more time thinking (probably
@@ -85,6 +85,7 @@
         or researches, you may not qualify for the advancement. Also, you are required to pay hefty sums of money to the IFEL.
       p
         | The first level is called
+        |
         b Apprentice
         | .
         .
@@ -96,6 +97,7 @@
           upgrades. In order to build more it's necessary for you to move on to the next level.
       p
         | The second level is
+        |
         b Entrepreneur
         | .
         .
@@ -113,6 +115,7 @@
         will have a building limit of 200.
       p
         | Next comes
+        |
         b Master
         | .
         .
@@ -122,6 +125,7 @@
           automatically receive 200 Prestige Points. Your building limit is set at 350.
       p
         | The fifth level is
+        |
         b Paradigm
         .
           This is a critical milestone in your evolution as an investor, since you will have access to the Magna Seal for
@@ -133,15 +137,18 @@
           billion and you will receive 400 Prestige Points. Your building limit is set at 500.
       p
         | Next is
+        |
         b Legend
         | . Reaching this level means you will be consecrated as a living example of excellence, because it most certainly
         | is not easy. In fact, you'll need an average profit ratio greater than $500,000/h and at least 15,000 Prestige
         | and your IFEL payment will be a whopping $40 billion. You will receive 800 Prestige and your building limits is 501.
       p
         | Next is
+        |
         b Life After Legend
         |
         | and the levels here are
+        |
         b Beyond Legend I, II, III
         | , and so on.
       p.

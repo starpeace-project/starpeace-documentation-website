@@ -25,6 +25,7 @@ module.exports = {
   generate: {
     fallback: false
   },
+  telemetry: false,
   build: {
     // analyze: true,
     publicPath: '/assets/',

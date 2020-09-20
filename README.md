@@ -1,7 +1,7 @@
 
-# starpeace-website-documentation
+# starpeace-documentation-website
 
-[![Build Status](https://travis-ci.org/starpeace-project/starpeace-website-documentation.svg)](https://travis-ci.org/starpeace-project/starpeace-website-documentation)
+[![Build Status](https://travis-ci.org/starpeace-project/starpeace-documentation-website.svg)](https://travis-ci.org/starpeace-project/starpeace-documentation-website)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -9,7 +9,7 @@ Documentation website for [STARPEACE](https://docs.starpeace.io), including game
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within this website, please send an e-mail to security@starpeace.io or open a [GitHub issue](https://github.com/starpeace-project/starpeace-website-documentation/issues). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this website, please send an e-mail to security@starpeace.io. All security vulnerabilities will be promptly addressed.
 
 ## Development
 
@@ -21,11 +21,11 @@ Local development can be accomplished in a few commands. The following build-tim
 Retrieve copy of repository and navigate to root:
 
 ```
-$ git clone https://github.com/starpeace-project/starpeace-website-documentation.git
-$ cd starpeace-website-documentation
+$ git clone https://github.com/starpeace-project/starpeace-documentation-website.git
+$ cd starpeace-documentation-website
 ```
 
-Install starpeace-website-documentation dependencies:
+Install starpeace-documentation-website dependencies:
 
 ```
 $ npm install

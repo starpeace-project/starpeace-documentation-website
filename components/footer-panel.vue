@@ -6,7 +6,7 @@
       .column.is-2
         a(href='https://www.starpeace.io/privacy') Privacy
       .column.is-2
-        a(href='https://github.com/starpeace-project/starpeace-website-documentation', target='_blank') GitHub
+        a(href='https://github.com/starpeace-project/starpeace-documentation-website', target='_blank') GitHub
 
     .columns.copyright
       .column.is-6.is-offset-3
