@@ -15,7 +15,9 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Documentation for STARPEACE multiplayer economic simulation' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', media: '(prefers-color-scheme:no-preference)'},
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon-dark.ico', media: '(prefers-color-scheme:dark)' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon-light.ico', media: '(prefers-color-scheme:light)' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round' }
     ]
   },
@@ -41,6 +43,7 @@ module.exports = {
     '@nuxtjs/moment', ['@nuxtjs/google-analytics', { id: 'UA-120729341-3', debug: { sendHitTask: !is_development } }]
   ],
   plugins: [
+    { src: '~/plugins/favicon-switcher', ssr: false },
     { src: '~/plugins/font-awesome', ssr: false }
   ]
 }

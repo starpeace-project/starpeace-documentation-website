@@ -53,4 +53,4 @@ Repository is currently deployed to and hosted with AWS S3. Changes pushed to re
 
 ## License
 
-All content of starpeace-website-client-assets is licensed under the [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0), and the underlying source code used to format and display that content is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
+All content of starpeace-documentation-website is licensed under the [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0), and the underlying source code used to format and display that content is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
