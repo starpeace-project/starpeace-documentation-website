@@ -8,7 +8,7 @@
     "build": "nuxt build",
     "dev": "cross-env NODE_ENV=development nuxt dev --port 11005",
     "generate": "cross-env nuxt generate",
-    "generate-api-docs": "openapi-generator-cli generate -i ./node_modules/@starpeace/starpeace-server-multiverse-api/api/openapi.yaml -g html -t ./openapi/html-templates/ -o ./.output/public/api-docs/multiverse && cross-env del-cli ./.output/public/api-docs/multiverse/.openapi-generator-ignore ./.output/public/api-docs/multiverse/.openapi-generator",
+    "generate-api-docs": "openapi-generator-cli generate -i ./node_modules/@starpeace/starpeace-server-multiverse-api/api/openapi.yaml -g html -t ./openapi/html-templates/ -o ./.output/public/api-docs/multiverse && del-cli ./.output/public/api-docs/multiverse/.openapi-generator-ignore ./.output/public/api-docs/multiverse/.openapi-generator",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
