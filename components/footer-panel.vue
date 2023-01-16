@@ -1,24 +1,28 @@
 <template lang='pug'>
-  #footer-container
-    .columns.links
-      .column.is-2.is-offset-3
-        a(href='https://docs.starpeace.io') Documentation
-      .column.is-2
-        a(href='https://www.starpeace.io/privacy') Privacy
-      .column.is-2
-        a(href='https://github.com/starpeace-project/starpeace-documentation-website', target='_blank') GitHub
+#footer-container
+  .columns.links
+    .column.is-2.is-offset-3
+      a(href='https://docs.starpeace.io') Documentation
+    .column.is-2
+      a(href='https://www.starpeace.io/privacy') Privacy
+    .column.is-2
+      a(href='https://github.com/starpeace-project/starpeace-documentation-website', target='_blank') GitHub
 
-    .columns.copyright
-      .column.is-6.is-offset-3
-        span(v-once=true, v-html='copyright()')
+  .columns.copyright
+    .column.is-6.is-offset-3
+      span Copyright &copy; {{currentYear}}
 </template>
 
-<script lang='coffee'>
-import moment from 'moment'
+<script>
+import { DateTime } from 'luxon';
 
-export default
-  methods:
-    copyright: () -> "Copyright &copy; #{moment().year()}"
+export default {
+  computed: {
+    currentYear () {
+      return DateTime.now().year;
+    }
+  }
+}
 </script>
 
 <style lang='sass' scoped>

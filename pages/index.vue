@@ -77,10 +77,10 @@
           a.card-footer-item(href='https://discord.gg/TF9Bmsj', target='_blank') Join Discord Channel
 </template>
 
-<script lang='coffee'>
-export default
-  layout: 'documentation'
+<script>
+export default {
   category: 'homepage'
+}
 </script>
 
 <style lang='sass' scoped>

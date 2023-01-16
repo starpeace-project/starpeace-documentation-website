@@ -1,8 +1,3 @@
-@import '~bulma/sass/utilities/_all'
-
-/* https://bulma.io/documentation/overview/variables/ */
-
-@import '~bulma'
 
 $sp-primary: #6ea192
 $sp-primary-bg: #395950
@@ -11,6 +6,25 @@ $sp-primary-bg: #395950
 @keyframes spin
   100%
     transform: rotate(360deg)
+
+
+@-webkit-keyframes VerticalBackgroundScroll
+  0%
+    background-position-y: 0%
+  100%
+    background-position-y: 100%
+
+@-moz-keyframes VerticalBackgroundScroll
+  0%
+    background-position-y: 0%
+  100%
+    background-position-y: 100%
+
+@keyframes VerticalBackgroundScroll
+  0%
+    background-position-y: 0%
+  100%
+    background-position-y: 100%
 
 
 /* handle auto-generated vue transition classes */
