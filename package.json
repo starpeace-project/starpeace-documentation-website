@@ -21,7 +21,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.2",
-    "@nuxtjs/google-gtag": "^1.0.4",
     "@openapitools/openapi-generator-cli": "^2.5.2",
     "@starpeace/starpeace-assets": "github:starpeace-project/starpeace-assets.git#v0.2.24",
     "@starpeace/starpeace-assets-types": "github:starpeace-project/starpeace-assets-types.git#v0.2.25",
@@ -38,6 +37,7 @@
     "pug-plain-loader": "^1.1.0",
     "sass": "1.56.1",
     "sass-loader": "^13.2.0",
-    "terser": "^5.16.1"
+    "terser": "^5.16.1",
+    "vue-gtag-next": "^1.14.0"
   }
 }

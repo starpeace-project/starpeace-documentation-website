@@ -65,6 +65,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      sendAnalytics: !is_development,
       BUILDING_DEFINITIONS: building_definitions,
       BUILDING_SIMULATION_DEFINITIONS: building_simulation_definitions,
       COMPANY_SEALS: company_seals,
@@ -82,12 +83,6 @@ export default defineNuxtConfig({
   generate: {
     fallback: false
   },
-  'google-gtag': {
-    id: 'UA-120729341-3',
-    config: {
-      send_page_view: !is_development
-    }
-  },
   telemetry: false,
   static: {
     prefix: false
@@ -100,5 +95,5 @@ export default defineNuxtConfig({
     },
     standalone: true
   },
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/google-gtag']
+  buildModules: ['@nuxt/typescript-build']
 })
