@@ -88,7 +88,17 @@
 
 <script>
 import _ from 'lodash';
-import STARPEACE from '@starpeace/starpeace-assets-types';
+import {
+  BuildingDefinition,
+  SimulationDefinitionParser,
+  CompanySeal,
+  IndustryCategory,
+  IndustryType,
+  InventionDefinition,
+  Level,
+  ResourceType,
+  ResourceUnit
+} from '@starpeace/starpeace-assets-types';
 
 import FinancialsIndustryComponent from '~/components/reference/building/financials-industry';
 import ResourceTypeComponent from '~/components/reference/building/resource-type';
@@ -108,15 +118,15 @@ export default {
   },
 
   data () {
-    const building_definitions = _.map(this.$config.public.BUILDING_DEFINITIONS, STARPEACE.building.BuildingDefinition.fromJson);
-    const building_simulation_definitions = _.map(this.$config.public.BUILDING_SIMULATION_DEFINITIONS, STARPEACE.building.simulation.BuildingSimulationDefinitionParser.fromJson);
-    const company_seals = _.map(this.$config.public.COMPANY_SEALS, STARPEACE.seal.CompanySeal.fromJson);
-    const industry_categories = _.map(this.$config.public.INDUSTRY_CATEGORIES, STARPEACE.industry.IndustryCategory.fromJson);
-    const industry_types = _.map(this.$config.public.INDUSTRY_TYPES, STARPEACE.industry.IndustryType.fromJson);
-    const inventions = _.map(this.$config.public.INVENTIONS, STARPEACE.invention.InventionDefinition.fromJson);
-    const levels = _.map(this.$config.public.LEVELS, STARPEACE.industry.Level.fromJson);
-    const resource_types = _.map(this.$config.public.RESOURCE_TYPES, STARPEACE.industry.ResourceType.fromJson);
-    const resource_units = _.map(this.$config.public.RESOURCE_UNITS, STARPEACE.industry.ResourceUnit.fromJson);
+    const building_definitions = _.map(this.$config.public.BUILDING_DEFINITIONS, BuildingDefinition.fromJson);
+    const building_simulation_definitions = _.map(this.$config.public.BUILDING_SIMULATION_DEFINITIONS, SimulationDefinitionParser.fromJson);
+    const company_seals = _.map(this.$config.public.COMPANY_SEALS, CompanySeal.fromJson);
+    const industry_categories = _.map(this.$config.public.INDUSTRY_CATEGORIES, IndustryCategory.fromJson);
+    const industry_types = _.map(this.$config.public.INDUSTRY_TYPES, IndustryType.fromJson);
+    const inventions = _.map(this.$config.public.INVENTIONS, InventionDefinition.fromJson);
+    const levels = _.map(this.$config.public.LEVELS, Level.fromJson);
+    const resource_types = _.map(this.$config.public.RESOURCE_TYPES, ResourceType.fromJson);
+    const resource_units = _.map(this.$config.public.RESOURCE_UNITS, ResourceUnit.fromJson);
 
     return {
       building_definitions,
@@ -134,11 +144,11 @@ export default {
       selected_company_seals_by_id: _.fromPairs(_.map(company_seals, (seal) => [seal.id, true])),
       selected_levels_by_id: _.fromPairs(_.map(levels, (level) => [level.id, true])),
 
-      max_levels_by_id: _.fromPairs(_.map(building_simulation_definitions, (definition) => [definition.id, definition.max_level ?? 1])),
+      max_levels_by_id: _.fromPairs(_.map(building_simulation_definitions, (definition) => [definition.id, definition.maxLevel ?? 1])),
       demand_by_id_type:  _.fromPairs(_.compact(_.flatMap(building_simulation_definitions, (definition) => {
         if (definition.type != 'STORE') return null;
         return _.flatMap(definition.products, (product) => {
-          return _.map(product.outputs, (output) => [`${definition.id}-${output.resource_id}`, demand_for_resource(output.resource_id)]);
+          return _.map(product.outputs, (output) => [`${definition.id}-${output.resourceId}`, demand_for_resource(output.resourceId)]);
         });
       }))),
       resource_price_cost_adjustment_by_id: _.fromPairs(_.map(resource_types, (type) => [type.id, (type.id == 'EXECUTIVE' || type.id == 'PROFESSIONAL' || type.id == 'WORKER' ? 100 : 200)])),

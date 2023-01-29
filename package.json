@@ -13,29 +13,29 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^3.0.0"
+    "nuxt": "^3.1.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
-    "@fortawesome/vue-fontawesome": "^3.0.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
     "@openapitools/openapi-generator-cli": "^2.5.2",
     "@starpeace/starpeace-assets": "github:starpeace-project/starpeace-assets.git#v0.2.24",
-    "@starpeace/starpeace-assets-types": "github:starpeace-project/starpeace-assets-types.git#v0.2.25",
+    "@starpeace/starpeace-assets-types": "github:starpeace-project/starpeace-assets-types.git#v0.3.1",
     "@starpeace/starpeace-server-multiverse-api": "github:starpeace-project/starpeace-server-multiverse-api.git#v0.1.7",
-    "@types/lodash": "^4.14.190",
-    "@types/luxon": "^3.1.0",
+    "@types/lodash": "^4.14.191",
+    "@types/luxon": "^3.2.0",
     "bulma": "^0.9.4",
     "cross-env": "^7.0.3",
     "del-cli": "^5.0.0",
     "favicon-switcher": "^1.2.2",
     "lodash": "^4.17.21",
-    "luxon": "^3.1.0",
+    "luxon": "^3.2.1",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
-    "sass": "1.56.1",
+    "sass": "1.57.1",
     "sass-loader": "^13.2.0",
     "terser": "^5.16.1",
     "vue-gtag-next": "^1.14.0"
