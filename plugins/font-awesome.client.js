@@ -6,7 +6,7 @@ import * as fab from '@fortawesome/free-brands-svg-icons';
 
 library.add(far.faQuestionCircle);
 library.add(fas.faAngleDown, fas.faAngleRight, fas.faAngleUp, fas.faFlask, fas.faSearch, fas.faUserSecret, fas.faUserTie);
-library.add(fab.faDiscord, fab.faGithub, fab.faTwitter);
+library.add(fab.faDiscord, fab.faGithub);
 
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
