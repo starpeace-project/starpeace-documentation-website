@@ -19,11 +19,11 @@
             | Notes
 
       .client-link
-        a.background-link(href='http://www.starpeaceonline.com/')
+        a.background-link(href='https://ifel.space/')
         .level.game-logo.is-spo
-          a.level-item(href='http://www.starpeaceonline.com/')
+          a.level-item(href='https://ifel.space/')
         .level.game-notes
-          a.level-left(href='http://www.starpeaceonline.com/support.asp') Windows Client
+          a.level-left(href='https://ifel.space/support.asp') Windows Client
 
     p.menu-label Basic Strategy
     ul.menu-list
