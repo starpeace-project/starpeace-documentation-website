@@ -13,7 +13,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^3.7.1"
+    "nuxt": "^3.8.0"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -25,8 +25,8 @@
     "@starpeace/starpeace-assets": "github:starpeace-project/starpeace-assets.git#v0.2.25",
     "@starpeace/starpeace-assets-types": "github:starpeace-project/starpeace-assets-types.git#v0.3.6",
     "@starpeace/starpeace-server-multiverse-api": "github:starpeace-project/starpeace-server-multiverse-api.git#v0.1.7",
-    "@types/lodash": "^4.14.198",
-    "@types/luxon": "^3.3.2",
+    "@types/lodash": "^4.14.200",
+    "@types/luxon": "^3.3.3",
     "bulma": "^0.9.4",
     "cross-env": "^7.0.3",
     "del-cli": "^5.1.0",
@@ -35,7 +35,7 @@
     "luxon": "^3.4.3",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
-    "sass": "1.66.1",
+    "sass": "1.69.4",
     "sass-loader": "^13.3.2",
     "vue-gtag-next": "^1.14.0"
   }
