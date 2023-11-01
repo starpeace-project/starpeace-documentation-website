@@ -90,14 +90,14 @@
 import _ from 'lodash';
 import {
   BuildingDefinition,
-  SimulationDefinitionParser,
   CompanySeal,
   IndustryCategory,
   IndustryType,
   InventionDefinition,
   Level,
   ResourceType,
-  ResourceUnit
+  ResourceUnit,
+  SimulationDefinitionParser
 } from '@starpeace/starpeace-assets-types';
 
 import FinancialsIndustryComponent from '~/components/reference/building/financials-industry';

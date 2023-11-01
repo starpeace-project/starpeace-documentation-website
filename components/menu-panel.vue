@@ -19,11 +19,11 @@
             | Notes
 
       .client-link
-        a.background-link(href='https://ifel.space/')
+        a.background-link(href='http://www.starpeaceonline.com/')
         .level.game-logo.is-spo
-          a.level-item(href='https://ifel.space/')
+          a.level-item(href='http://www.starpeaceonline.com/')
         .level.game-notes
-          a.level-left(href='https://ifel.space/support.asp') Windows Client
+          a.level-left(href='http://www.starpeaceonline.com/support.asp') Windows Client
 
     p.menu-label Basic Strategy
     ul.menu-list
@@ -126,7 +126,7 @@ export default {
 
   created () {
     const request = new XMLHttpRequest();
-    request.open('GET', 'https://client.starpeace.io/assets/client-version.json', true);
+    request.open('GET', 'https://client.starpeace.io/client/client-version.json', true);
     request.onload = () => {
       if (request.status >= 200 && request.status < 400)
         this.client_version = `WebGL Client ${JSON.parse(request.responseText).version}`;
