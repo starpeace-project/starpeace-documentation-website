@@ -43,7 +43,6 @@ const resource_units = parse_to_json(path.resolve('node_modules/@starpeace/starp
 
 export default defineNuxtConfig({
   css: [
-    'bulma',
     '@/assets/stylesheets/bulma-starpeace.sass'
   ],
   app: {

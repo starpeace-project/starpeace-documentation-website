@@ -56,18 +56,6 @@
     .column.is-half-tablet.is-one-third-desktop
       .card
         .card-header
-          .card-header-title Community Forum
-        .card-content
-          p.subtitle.
-            Join the community! Use the STARPEACE forums to meet new friends and meet key allies to help you advance,
-            strike new partnerships and discuss your experience with the game, and share your ideas and stories plus
-            any of your own tips learned along the way.
-        footer.card-footer
-          a.card-footer-item(href='https://starpeace-project.com/', target='_blank') Visit Community Forums
-
-    .column.is-half-tablet.is-one-third-desktop
-      .card
-        .card-header
           .card-header-title Community Chatroom
         .card-content
           p.subtitle.

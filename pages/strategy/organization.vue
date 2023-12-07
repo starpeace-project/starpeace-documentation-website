@@ -55,7 +55,7 @@
       only the stores and the headquarters.
     p.
       This represents the first stage of the company; if drawn, its structure would resemble:
-    p.
+    p
       img(src='~/assets/images/strategy.organization.01.gif')
 
     p.
@@ -72,7 +72,7 @@
       the exact quality and price of the goods your stores are selling.
     p.
       The following scheme depicts the new configuration:
-    p.
+    p
       img(src='~/assets/images/strategy.organization.02.gif')
     p.
       This would be the second stage in your company's growth. There is a hidden benefit to this scheme. In the
@@ -91,7 +91,7 @@
       step backwards. You simply could make the factories sell their production to your Warehouse, like the
       following scheme shows. In this configuration, your stores would continue working as if nothing had changed,
       except that now most of the supplies would actually come from within your company.
-    p.
+    p
       img(src='~/assets/images/strategy.organization.03.gif')
     p.
       This solution has a problem, though. Should the Factory create any surplus, that is, production your stores
