@@ -44,14 +44,19 @@ export default class Financials {
     let income = 0;
 
     if (definition.type == 'FACTORY') {
-      let total_duration = 0;
-      for (let stage of definition.stages) {
-        total_duration += stage.duration;
-        opex_labor += _.reduce(stage.labor, ((result: number, value: any): number => result + value.maxVelocity * cost_price_of(value.resourceId) * full_level_adjustment), 0) * stage.duration;
-        opex_operations += _.reduce(stage.operations, ((result: number, value: any): number => result + value.maxVelocity * cost_price_of(value.resourceId) * half_level_adjustment), 0) * stage.duration;
-        opex_supplies += _.reduce(stage.inputs, ((result: number, value: any): number => result + value.maxVelocity * cost_price_of(value.resourceId) * full_level_adjustment), 0) * stage.duration;
-        income += _.reduce(stage.outputs, ((result: number, value: any): number => result + value.maxVelocity * sale_price_of(value.resourceId) * full_level_adjustment), 0) * stage.duration;
-      }
+      let total_duration = 1;
+      opex_labor += _.reduce(definition.labor, ((result: number, value: any): number => result + value.maxVelocity * cost_price_of(value.resourceId) * full_level_adjustment), 0);
+      opex_operations += _.reduce(definition.operations, ((result: number, value: any): number => result + value.maxVelocity * cost_price_of(value.resourceId) * half_level_adjustment), 0);
+      opex_supplies += _.reduce(definition.inputs, ((result: number, value: any): number => result + value.maxVelocity * cost_price_of(value.resourceId) * full_level_adjustment), 0);
+      income += _.reduce(definition.outputs, ((result: number, value: any): number => result + value.maxVelocity * sale_price_of(value.resourceId) * full_level_adjustment), 0);
+
+      // for (let stage of (definition.stages ?? [])) {
+      //   total_duration += stage.duration;
+      //   opex_labor += _.reduce(stage.labor, ((result: number, value: any): number => result + value.maxVelocity * cost_price_of(value.resourceId) * full_level_adjustment), 0) * stage.duration;
+      //   opex_operations += _.reduce(stage.operations, ((result: number, value: any): number => result + value.maxVelocity * cost_price_of(value.resourceId) * half_level_adjustment), 0) * stage.duration;
+      //   opex_supplies += _.reduce(stage.inputs, ((result: number, value: any): number => result + value.maxVelocity * cost_price_of(value.resourceId) * full_level_adjustment), 0) * stage.duration;
+      //   income += _.reduce(stage.outputs, ((result: number, value: any): number => result + value.maxVelocity * sale_price_of(value.resourceId) * full_level_adjustment), 0) * stage.duration;
+      // }
       opex_labor = opex_labor / total_duration;
       opex_operations = opex_operations / total_duration;
       opex_supplies = opex_supplies / total_duration;

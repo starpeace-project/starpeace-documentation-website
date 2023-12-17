@@ -15,7 +15,6 @@ If you discover a security vulnerability within this website, please send an e-m
 Local development can be accomplished in a few commands. The following build-time dependencies must be installed:
 
 * [Node.js](https://nodejs.org/en/) javascript runtime and [npm](https://www.npmjs.com/get-npm) package manager
-* [Grunt](https://gruntjs.com/) task manager
 
 Retrieve copy of repository and navigate to root:
 
@@ -34,6 +33,7 @@ Build repository with npm command defined in package.json:
 
 ```
 $ npm run generate
+$ npm run generate-api-docs
 ```
 
 Local development with nuxt and interactive build can be started with a single command:
