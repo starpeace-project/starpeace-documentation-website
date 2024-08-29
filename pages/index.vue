@@ -11,11 +11,12 @@
         .card-header
           .card-header-title Basic Strategy
         .card-content
-          p.subtitle.has-text-justified.
-            You can make your strategy as basic or complex as you wish. You can start up a few businesses and sit back
-            while the money trickles in or you can find out how to build a powerful empire of thriving businesses that
-            will skyrocket you to the top of the rankings. Look through the different links to the right to learn how
-            to map out your strategy.
+          .content
+            p.subtitle.has-text-justified.
+              You can make your strategy as basic or complex as you wish. You can start up a few businesses and sit back
+              while the money trickles in or you can find out how to build a powerful empire of thriving businesses that
+              will skyrocket you to the top of the rankings. Look through the different links to the right to learn how
+              to map out your strategy.
         footer.card-footer
           a.card-footer-item(href='/strategy/overview') Learn STARPEACE Strategy
 
@@ -24,10 +25,11 @@
         .card-header
           .card-header-title Tutorials
         .card-content
-          p.subtitle.
-            These step-by-step guides will help you navigate through this complex world. From the basics of getting
-            started to learning how to set up your businesses, the links at the right will get you up and running in
-            no time.
+          .content
+            p.subtitle.
+              These step-by-step guides will help you navigate through this complex world. From the basics of getting
+              started to learning how to set up your businesses, the links at the right will get you up and running in
+              no time.
         footer.card-footer
           a.card-footer-item(href='/tutorial/starting') Follow Gameplay Tutorials
 
@@ -36,9 +38,10 @@
         .card-header
           .card-header-title FAQs
         .card-content
-          p.subtitle.
-            We knew you'd have questions, so we've created a list of frequently asked questions in the links to the
-            right. Find your answers fast so you can get back to earning the big bucks.
+          .content
+            p.subtitle.
+              We knew you'd have questions, so we've created a list of frequently asked questions in the links to the
+              right. Find your answers fast so you can get back to earning the big bucks.
         footer.card-footer
           a.card-footer-item(href='/faq/goals') View Frequently Asked Questions
 
@@ -47,9 +50,10 @@
         .card-header
           .card-header-title Tips
         .card-content
-          p.subtitle.has-text-justified.
-            The more successful companies you have, the more prestige points you will earn, and the higher you will
-            rise in the rankings. Draw off these tips to help you organize your many businesses.
+          .content
+            p.subtitle.has-text-justified.
+              The more successful companies you have, the more prestige points you will earn, and the higher you will
+              rise in the rankings. Draw off these tips to help you organize your many businesses.
         footer.card-footer
           a.card-footer-item(href='/tips/largecompany') View STARPEACE Tips
 
@@ -58,9 +62,10 @@
         .card-header
           .card-header-title Community Chatroom
         .card-content
-          p.subtitle.
-            We knew you'd have questions, so we've created a list of frequently asked questions in the links to the
-            right. Find your answers fast so you can get back to earning the big bucks.
+          .content
+            p.subtitle.
+              We knew you'd have questions, so we've created a list of frequently asked questions in the links to the
+              right. Find your answers fast so you can get back to earning the big bucks.
         footer.card-footer
           a.card-footer-item(href='https://discord.gg/TF9Bmsj', target='_blank') Join Discord Channel
 </template>

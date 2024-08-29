@@ -11,48 +11,48 @@
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link Category
               .navbar-dropdown
-                a.navbar-item(v-on:click.stop.prevent="toggle_filter_category('all')") All
-                a.navbar-item(v-on:click.stop.prevent="toggle_filter_category('none')") None
+                a.navbar-item(@click.stop.prevent="toggle_filter_category('all')") All
+                a.navbar-item(@click.stop.prevent="toggle_filter_category('none')") None
                 hr.navbar-divider
                 a.navbar-item(
                   v-for='category in sorted_industry_categories',
-                  v-on:click.stop.prevent="toggle_filter_category(category.id)",
+                  @click.stop.prevent="toggle_filter_category(category.id)",
                   :class="selected_industry_categories_by_id[category.id] ? 'is-active' : ''"
                 ) {{category.label.english}}
 
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link Industry
               .navbar-dropdown
-                a.navbar-item(v-on:click.stop.prevent="toggle_filter_industry_type('all')") All
-                a.navbar-item(v-on:click.stop.prevent="toggle_filter_industry_type('none')") None
+                a.navbar-item(@click.stop.prevent="toggle_filter_industry_type('all')") All
+                a.navbar-item(@click.stop.prevent="toggle_filter_industry_type('none')") None
                 hr.navbar-divider
                 a.navbar-item(
                   v-for='industry_type in sorted_industry_types',
-                  v-on:click.stop.prevent="toggle_filter_industry_type(industry_type.id)",
+                  @click.stop.prevent="toggle_filter_industry_type(industry_type.id)",
                   :class="selected_industry_types_by_id[industry_type.id] ? 'is-active' : ''"
                 ) {{industry_type.label.english}}
 
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link Seal
               .navbar-dropdown
-                a.navbar-item(v-on:click.stop.prevent="toggle_filter_seal('all')") All
-                a.navbar-item(v-on:click.stop.prevent="toggle_filter_seal('none')") None
+                a.navbar-item(@click.stop.prevent="toggle_filter_seal('all')") All
+                a.navbar-item(@click.stop.prevent="toggle_filter_seal('none')") None
                 hr.navbar-divider
                 a.navbar-item(
                   v-for='seal in sorted_company_seals',
-                  v-on:click.stop.prevent="toggle_filter_seal(seal.id)",
+                  @click.stop.prevent="toggle_filter_seal(seal.id)",
                   :class="selected_company_seals_by_id[seal.id] ? 'is-active' : ''"
                 ) {{seal.nameShort}}
 
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link Level
               .navbar-dropdown
-                a.navbar-item(v-on:click.stop.prevent="toggle_filter_level('all')") All
-                a.navbar-item(v-on:click.stop.prevent="toggle_filter_level('none')") None
+                a.navbar-item(@click.stop.prevent="toggle_filter_level('all')") All
+                a.navbar-item(@click.stop.prevent="toggle_filter_level('none')") None
                 hr.navbar-divider
                 a.navbar-item(
                   v-for='level in sorted_levels',
-                  v-on:click.stop.prevent="toggle_filter_level(level.id)",
+                  @click.stop.prevent="toggle_filter_level(level.id)",
                   :class="selected_levels_by_id[level.id] ? 'is-active' : ''"
                 ) {{level.label.english}}
 
@@ -228,13 +228,24 @@ $sp-primary-bg: #395950
   margin-top: 2px
   padding: 0 1rem
 
+  .navbar-dropdown
+    background-color: #FFF
+
+    > .navbar-item
+      &:not(.is-active)
+        border-left: 1px solid $sp-primary
+        border-right: 1px solid $sp-primary
+
+  .navbar-divider
+    margin: .25rem 0
+
   .navbar-item
     &.is-active
       background-color: $sp-primary !important
       color: #FFF
 
-      &:hover
-        background-color: darken($sp-primary, 5%) !important
+    &:hover
+      background-color: darken($sp-primary, 5%) !important
 
 .main-card
   padding-top: 0
